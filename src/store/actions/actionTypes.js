@@ -4,3 +4,4 @@ export const CREATE_NEW_CANVAS = 'CREATE_NEW_CANVAS';
 export const APPLY_PEN = 'APPLY_PEN';
 export const APPLY_ERASER = 'APPLY_ERASER';
 export const SWITCH_TOOL = 'SWITCH_TOOL';
+export const SWITCH_COLOR = 'SWITCH_COLOR';

@@ -1,5 +1,8 @@
 .albums {
 	width: 750px;
 	height: 150px;
-	background-color: $shade-6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $shade-5;
 }

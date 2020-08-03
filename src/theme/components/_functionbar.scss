@@ -5,6 +5,11 @@
 	margin-bottom: 50px;
 	& > span {
 		color: $color-font;
+		cursor: pointer;
+
+		&:active {
+			color: $color-font-sub;
+		}
 		&.iconfont {
 			font-size: 50px;
 			&.use-this-tool {

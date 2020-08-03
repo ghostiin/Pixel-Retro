@@ -1,3 +1,4 @@
+import { ActionCreators } from 'redux-undo';
 import * as types from './actionTypes';
 
 export function getGridInfo(gridElement) {
@@ -23,4 +24,18 @@ export function switchTool(tool) {
 		type: types.SWITCH_TOOL,
 		payload: tool
 	};
+}
+export function switchColor(color) {
+	return {
+		type: types.SWITCH_COLOR,
+		payload: color
+	};
+}
+
+export function undo() {
+	return ActionCreators.undo();
+}
+
+export function redo() {
+	return ActionCreators.redo();
 }

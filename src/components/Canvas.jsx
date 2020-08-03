@@ -10,10 +10,11 @@ const Canvas = () => {
 	// const cols = 16;
 	// const rows = 16;
 	const { drawing, setDrawing } = useContext(drawContext);
-	const { canvasSet, cols, rows, currentIndex, hoverIndex } = useSelector((state) => state.canvas);
+	const { canvasSet, cols, rows, currentIndex, hoverIndex } = useSelector((state) => state.present.canvas);
+	const { paletteColor } = useSelector((state) => state.present.palette);
 	const currentCanvas = canvasSet[currentIndex];
-	const grid = useSelector((state) => state.grid);
-	const tool = useSelector((state) => state.tool);
+	const grid = useSelector((state) => state.present.grid);
+	const tool = useSelector((state) => state.present.tool);
 	const dispatch = useDispatch();
 	const cells = canvasSet[currentIndex];
 	const gridStyle = {
@@ -22,10 +23,9 @@ const Canvas = () => {
 		touchAction: 'none' // 禁用 touchEv 的 passive->false
 	};
 
-	const paletteColor = '#000';
 	const changeCell = (id) =>
 		paletteColor !== currentCanvas[id] || tool !== tools.PEN
-			? dispatch(actionCreators.cellAction({ id, color: currentCanvas[id], rows, cols, tool }))
+			? dispatch(actionCreators.cellAction({ id, color: currentCanvas[id], paletteColor, rows, cols, tool }))
 			: null;
 
 	const cellStyle = (cell) => ({
