@@ -17,3 +17,10 @@ export function cellAction({ id, color, columns, rows, tool = 'PEN', paletteColo
 		rows
 	};
 }
+
+export function switchTool(tool) {
+	return {
+		type: types.SWITCH_TOOL,
+		payload: tool
+	};
+}

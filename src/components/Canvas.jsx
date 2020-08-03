@@ -4,6 +4,7 @@ import * as actionCreators from '../store/actions/actionCreaters';
 import touchToId from '../utils/drawHelpers';
 // eslint-disable-next-line import/no-cycle
 import { drawContext } from '../App';
+import * as tools from '../store/toolTypes';
 
 const Canvas = () => {
 	// const cols = 16;
@@ -12,6 +13,7 @@ const Canvas = () => {
 	const { canvasSet, cols, rows, currentIndex, hoverIndex } = useSelector((state) => state.canvas);
 	const currentCanvas = canvasSet[currentIndex];
 	const grid = useSelector((state) => state.grid);
+	const tool = useSelector((state) => state.tool);
 	const dispatch = useDispatch();
 	const cells = canvasSet[currentIndex];
 	const gridStyle = {
@@ -22,8 +24,8 @@ const Canvas = () => {
 
 	const paletteColor = '#000';
 	const changeCell = (id) =>
-		paletteColor !== currentCanvas[id]
-			? dispatch(actionCreators.cellAction({ id, color: currentCanvas[id], rows, cols }))
+		paletteColor !== currentCanvas[id] || tool !== tools.PEN
+			? dispatch(actionCreators.cellAction({ id, color: currentCanvas[id], rows, cols, tool }))
 			: null;
 
 	const cellStyle = (cell) => ({
