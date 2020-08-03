@@ -1,0 +1,28 @@
+.canvas-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+
+.grid-container {
+	width: 100%;
+	display: grid;
+
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+
+	grid-column-gap: 1px;
+	grid-row-gap: 1px;
+
+	align-content: center;
+	justify-content: center;
+
+	cursor: crosshair;
+}
+
+.cell {
+	background-color: #fff;
+	width: 100%;
+	padding-bottom: 100%;
+}

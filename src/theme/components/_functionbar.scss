@@ -1,0 +1,12 @@
+.function-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 50px;
+	& > span {
+		color: $color-font;
+		&.iconfont {
+			font-size: 50px;
+		}
+	}
+}
