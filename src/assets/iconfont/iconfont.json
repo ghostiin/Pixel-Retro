@@ -1,0 +1,93 @@
+{
+  "id": "1981784",
+  "name": "pr",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5097132",
+      "name": "Local download_fill",
+      "font_class": "Localdownload_fill",
+      "unicode": "e765",
+      "unicode_decimal": 59237
+    },
+    {
+      "icon_id": "13624513",
+      "name": "reset",
+      "font_class": "resetqingchu",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "1971961",
+      "name": "add",
+      "font_class": "add",
+      "unicode": "e731",
+      "unicode_decimal": 59185
+    },
+    {
+      "icon_id": "6065929",
+      "name": "save",
+      "font_class": "save",
+      "unicode": "e724",
+      "unicode_decimal": 59172
+    },
+    {
+      "icon_id": "1684207",
+      "name": "delete",
+      "font_class": "el-icon-delete",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "2182822",
+      "name": "像素入侵",
+      "font_class": "xiangsuruqin",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "11994030",
+      "name": "undo",
+      "font_class": "undo",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "11994031",
+      "name": "redo",
+      "font_class": "redo",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "12666391",
+      "name": "setting",
+      "font_class": "setting",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "12950162",
+      "name": "palette",
+      "font_class": "palette",
+      "unicode": "e9c1",
+      "unicode_decimal": 59841
+    },
+    {
+      "icon_id": "13201072",
+      "name": "像素橡皮",
+      "font_class": "xiangsuxiangpi",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "13201073",
+      "name": "像素画笔",
+      "font_class": "xiangsuhuabi",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    }
+  ]
+}
